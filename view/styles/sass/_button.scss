@@ -1,0 +1,15 @@
+.outline-button{
+    border-radius: .5rem;
+    border:1px solid $first-color;
+    padding: .8rem 1rem;
+    font-size: $normal-font-size * 1.2;
+    background-color: inherit;
+    outline: none;
+    color: $first-color;
+    transition: .2s ease-in;
+}
+
+.outline-button:hover{
+    color: #fff;
+    background-color: $first-color;
+}

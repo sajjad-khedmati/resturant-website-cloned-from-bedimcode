@@ -1,8 +1,12 @@
-// variables
+// variables & components
 @import './variable';
+@import './button';
 
 // reset css 
 @import './base';
 
 // navbar
 @import './navbar';
+
+// main section
+@import './home';

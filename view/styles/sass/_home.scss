@@ -1,0 +1,20 @@
+.home{
+    &-content{
+        padding: 1rem 0;
+        margin-bottom: $mb-6;
+        
+        .home-title{
+            color: $first-color;
+            font-size: $biggest-font-size * 1.4;
+        }
+        & p{
+            font-size: $h1-font-size;
+            margin: $mb-2 0;
+        }
+    }
+
+    &-image{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
