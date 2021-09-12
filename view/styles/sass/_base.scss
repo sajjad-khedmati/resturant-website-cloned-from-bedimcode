@@ -1,0 +1,60 @@
+
+/*========== BASE ==========*/
+*,::before,::after{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/*========== Variables Dark theme ==========*/
+body.dark-theme{
+    $title-color: #F1F3F2;
+    $text-color: #C7D1CC;
+    $body-color: #1D2521;
+    $container-color: #27302C;
+}
+
+/*========== Button Dark/Light ==========*/
+.change-theme {
+    position: absolute;
+    right: 1rem;
+    top: 1.8rem;
+    color: $text-color;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.bd-container {
+    max-width: 960px;
+    width: calc(100% - 2rem);
+    margin-left: $mb-2;
+    margin-right: $mb-2;
+}
+
+.section {
+    padding: 4rem 0 2rem;
+}
+
+body{
+    font-family: $body-font;
+    font-size: $normal-font-size;
+    background-color: $body-color;
+    color: $text-color;
+    line-height: 1.6;
+}
+h1,h2,h3,ul,p{
+    margin: 0;  
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}

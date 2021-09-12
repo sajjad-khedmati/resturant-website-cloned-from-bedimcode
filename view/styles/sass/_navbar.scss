@@ -1,0 +1,80 @@
+.header{ 
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $z-fixed;
+    padding: .6rem 0;
+    background-color: var(--body-color); 
+}
+
+.navbar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1024px;
+    height: $header-height;
+    &-logo{
+        font-size: $h2-font-size;
+        a{
+            color: $text-color;
+        }
+    }
+
+    &-item{
+        position: fixed;
+        left: 0;
+        transition: .6s ease-in-out;
+        top: -100%;
+        width: 100%;
+        border-radius: 0 0 1rem 1rem;
+        padding: 4.5rem 0 2rem 0;
+        text-align: center;
+        box-shadow: 0 4px 4px rgba(0,0,0,.1);;
+        
+        ul{
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+        }
+
+        &.show{
+            top: 0;
+        }
+
+    }
+
+    .item{
+        color: $title-color;
+        font-size: 1rem;
+        font-weight: $font-medium;
+        transition: .4s;
+        &.active{
+            color: $first-color;
+        }
+    }
+
+    .darkmode{
+        position: absolute;
+        top: 3rem;
+        right: 1rem;
+        font-size: 1.2rem;
+        color: $title-color;
+    }
+    .darkmode:hover{
+        color: $text-color-light
+    }
+
+    .item:hover{
+        color: $first-color;
+    }
+
+    &-toggler{
+        z-index: $z-fixed;
+        font-size: $h2-font-size;
+    }
+    &-toggler:hover{
+        color: $text-color-light;
+    }
+
+}

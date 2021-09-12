@@ -1,0 +1,138 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/*===== VARIABLES CSS =====*/
+/*========== Colors ==========*/
+/*========== Font and typography ==========*/
+/*========== Font weight ==========*/
+/*========== Margenes ==========*/
+/*========== z index ==========*/
+/*========== BASE ==========*/
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*========== Variables Dark theme ==========*/
+/*========== Button Dark/Light ==========*/
+.change-theme {
+  position: absolute;
+  right: 1rem;
+  top: 1.8rem;
+  color: #707070;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.bd-container {
+  max-width: 960px;
+  width: calc(100% - 2rem);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.section {
+  padding: 4rem 0 2rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.938rem;
+  background-color: #FBFEFD;
+  color: #707070;
+  line-height: 1.6;
+}
+
+h1, h2, h3, ul, p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 0.6rem 0;
+  background-color: var(--body-color);
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1024px;
+  height: 3rem;
+}
+.navbar-logo {
+  font-size: 1.25rem;
+}
+.navbar-logo a {
+  color: #707070;
+}
+.navbar-item {
+  position: fixed;
+  left: 0;
+  transition: 0.6s ease-in-out;
+  top: -100%;
+  width: 100%;
+  border-radius: 0 0 1rem 1rem;
+  padding: 4.5rem 0 2rem 0;
+  text-align: center;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar-item ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.navbar-item.show {
+  top: 0;
+}
+.navbar .item {
+  color: #393939;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.4s;
+}
+.navbar .item.active {
+  color: #069C54;
+}
+.navbar .darkmode {
+  position: absolute;
+  top: 3rem;
+  right: 1rem;
+  font-size: 1.2rem;
+  color: #393939;
+}
+.navbar .darkmode:hover {
+  color: #A6A6A6;
+}
+.navbar .item:hover {
+  color: #069C54;
+}
+.navbar-toggler {
+  z-index: 100;
+  font-size: 1.25rem;
+}
+.navbar-toggler:hover {
+  color: #A6A6A6;
+}
+
+/*# sourceMappingURL=style.css.map */
