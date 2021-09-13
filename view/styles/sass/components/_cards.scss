@@ -45,12 +45,16 @@
             width: 40px;
             height: 40px;
             text-align: center;
+            transition: .3s;
             color: #fff;
             font-size: 1.2rem;
             display: flex;
             justify-content: center;
             align-items: center;
             cursor: pointer;
+        }
+        .add-to-bag:hover{
+            background-color: $first-color-alt;
         }
 
     }

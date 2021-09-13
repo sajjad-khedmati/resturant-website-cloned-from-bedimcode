@@ -3,14 +3,22 @@
     position: fixed;
     top: 0;
     left: 0;
+
+    transition: .4s ease;
     z-index: $z-fixed;
     padding: .6rem 0;
     background-color: var(--body-color); 
 }
 
+.show-nav{
+    background-color: #fff;
+    box-shadow: $normal-box-shadow;
+}
+
 .navbar{
     position: relative;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     max-width: 1024px;
     height: $header-height;

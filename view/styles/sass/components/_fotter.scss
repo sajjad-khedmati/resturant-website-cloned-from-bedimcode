@@ -1,0 +1,38 @@
+.footer{
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+
+    &-item-links{
+        a{
+            color: $first-color;
+            font-size: $h2-font-size;
+            font-weight: $font-semi-bold;
+        }
+        .social{
+            margin-top: $mb-3;
+            span{
+                font-size: 1.3rem;
+                margin: 0 .4rem;
+                color: $title-color;
+            }
+        }
+    }
+
+    &-item{
+        a{
+            color: $title-color;
+            font-size: $h2-font-size;
+            font-weight: $font-semi-bold;
+        }
+
+        .footer-list{
+            margin-top: $mb-1* 0.7;
+        }
+    }
+}
+
+
+.copyright{    
+    text-align: center;
+    color: $text-color-light;
+}

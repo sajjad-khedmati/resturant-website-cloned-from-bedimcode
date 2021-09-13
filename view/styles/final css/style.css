@@ -101,14 +101,21 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+  transition: 0.4s ease;
   z-index: 100;
   padding: 0.6rem 0;
   background-color: var(--body-color);
 }
 
+.show-nav {
+  background-color: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
 .navbar {
   position: relative;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   max-width: 1024px;
   height: 3rem;
@@ -268,12 +275,16 @@ img {
   width: 40px;
   height: 40px;
   text-align: center;
+  transition: 0.3s;
   color: #fff;
   font-size: 1.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+.card-content .card-footer .add-to-bag:hover {
+  background-color: #048654;
 }
 
 .app-content {
@@ -301,6 +312,37 @@ img {
 }
 .contact-content .content-text {
   margin-bottom: 2rem;
+}
+
+.footer {
+  grid-template-columns: 1fr;
+  row-gap: 2.5rem;
+}
+.footer-item-links a {
+  color: #069C54;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.footer-item-links .social {
+  margin-top: 1.5rem;
+}
+.footer-item-links .social span {
+  font-size: 1.3rem;
+  margin: 0 0.4rem;
+  color: #393939;
+}
+.footer-item a {
+  color: #393939;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.footer-item .footer-list {
+  margin-top: 0.35rem;
+}
+
+.copyright {
+  text-align: center;
+  color: #A6A6A6;
 }
 
 /*# sourceMappingURL=style.css.map */
