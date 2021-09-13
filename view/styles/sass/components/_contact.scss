@@ -1,0 +1,9 @@
+.contact{
+    &-content{
+        text-align: center;
+
+        .content-text{
+            margin-bottom: $mb-4;
+        }
+    }
+}
