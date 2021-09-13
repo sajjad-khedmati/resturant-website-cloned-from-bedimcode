@@ -31,6 +31,18 @@ body.dark-theme{
     margin-left: $mb-2;
     margin-right: $mb-2;
 }
+ 
+.section-title{
+    font-size: 1.2rem;
+    margin-bottom: $mb-2;
+    color: $first-color;
+}
+.section-describe{
+    font-weight: $font-semi-bold;
+    margin-bottom: $mb-4;
+    font-size: $h1-font-size;
+    color: $title-color;
+}
 
 .section {
     padding: 4rem 0 2rem;

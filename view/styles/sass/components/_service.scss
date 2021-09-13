@@ -1,0 +1,27 @@
+.service{
+    &-content{
+        margin-top: $mb-4;
+        text-align: center;
+    }
+
+    &-items{
+        .service-item{
+            margin: 2rem 0;
+            text-align: center;
+            padding: 0 1rem;  
+        }
+    }
+
+}
+
+.service-image{
+    width: 64px;
+    height: 64px;
+    margin-bottom: $mb-2;
+    fill: $first-color;
+}
+
+.service-title{
+    color: $title-color;
+    margin-bottom: $mb-2;
+}

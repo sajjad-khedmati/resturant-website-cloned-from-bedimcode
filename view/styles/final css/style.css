@@ -49,6 +49,19 @@ html {
   margin-right: 1rem;
 }
 
+.section-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #069C54;
+}
+
+.section-describe {
+  font-weight: 600;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  color: #393939;
+}
+
 .section {
   padding: 4rem 0 2rem;
 }
@@ -180,17 +193,6 @@ img {
 .about-content {
   margin-bottom: 2.5rem;
 }
-.about-content .about-title {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  color: #069C54;
-}
-.about-content .about-describe {
-  font-weight: 600;
-  margin-bottom: 2rem;
-  font-size: 1.5rem;
-  color: #393939;
-}
 .about-content .about-text {
   margin: 2rem 0;
 }
@@ -201,6 +203,28 @@ img {
 .about-image img {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
+}
+
+.service-content {
+  margin-top: 2rem;
+  text-align: center;
+}
+.service-items .service-item {
+  margin: 2rem 0;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.service-image {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
+  fill: #069C54;
+}
+
+.service-title {
+  color: #393939;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
