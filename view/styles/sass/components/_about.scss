@@ -1,0 +1,32 @@
+.about{
+    text-align: center;
+
+    &-content{
+        margin-bottom: $mb-5;
+        
+        .about-title{
+            font-size: 1.2rem;
+            margin-bottom: $mb-2;
+            color: $first-color;
+        }
+        .about-describe{
+            font-weight: $font-semi-bold;
+            margin-bottom: $mb-4;
+            font-size: $h1-font-size;
+            color: $title-color;
+        }
+        .about-text{
+            margin: $mb-4 0;
+        }
+    }
+
+    &-image{
+        max-width: 300px;
+        margin: 0 auto;
+        img{
+        box-shadow: $normal-box-shadow;
+        border-radius: 1rem;
+        }
+    }
+
+}
