@@ -227,4 +227,53 @@ img {
   margin-bottom: 1rem;
 }
 
+.menu-content {
+  text-align: center;
+}
+.menu-cards {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.menu-card {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 1rem 0 0 0.6rem;
+  max-width: 200px;
+  background-color: #fff;
+  border-radius: 0.6rem;
+}
+.menu-card .card-image {
+  margin: 0 auto;
+  max-width: 110px;
+}
+
+.card-content .card-title {
+  margin-bottom: 1rem;
+}
+.card-content .card-title h4 {
+  color: #393939;
+  margin-bottom: -0.1rem;
+}
+.card-content .card-title p {
+  font-size: 0.813rem;
+}
+.card-content .card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-content .card-footer .add-to-bag {
+  background-color: #069C54;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=style.css.map */
