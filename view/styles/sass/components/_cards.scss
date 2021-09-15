@@ -60,3 +60,10 @@
     }
 
 }
+
+@media screen and (min-width: 576px) {
+    .menu-cards{
+        margin-top: 4rem;
+        grid-template-columns: repeat(3,1fr);
+    }
+}

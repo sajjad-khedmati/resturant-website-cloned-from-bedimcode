@@ -25,4 +25,30 @@
 }
 
 
-@import './contact'
+@import './contact';
+
+
+@media screen and (min-width: 576px) {
+    .app{
+        flex-direction: row-reverse;
+        display: flex;
+        align-items: center;
+        &-content{
+            text-align: left;
+            .app-links{
+                justify-content: start;
+            }
+        }
+
+        &-image{
+            min-width: 360px;
+        }
+    }
+
+    .content-text{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    
+}

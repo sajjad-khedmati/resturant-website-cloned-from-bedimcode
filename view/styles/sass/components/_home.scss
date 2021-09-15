@@ -12,9 +12,12 @@
             margin: $mb-2 0;
         }
     }
+}
 
-    &-image{
-        max-width: 300px;
-        margin: 0 auto;
+@media screen and (min-width: 576px) {
+    .home{
+        grid-template-columns: repeat(2,1fr);
+        height: 640px;
+        align-items: center;
     }
 }

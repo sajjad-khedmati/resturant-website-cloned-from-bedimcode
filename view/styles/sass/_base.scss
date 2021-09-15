@@ -43,7 +43,17 @@ body.dark-theme{
     font-size: $h1-font-size;
     color: $title-color;
 }
-
+@media screen and (min-width: 576px) {
+    .section-title{
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+    .section-describe{
+        font-weight: $font-semi-bold;
+        font-size: 2.5rem; 
+        margin-bottom: .5rem;
+    }
+}
 .section {
     padding: 4rem 0 2rem;
 }
@@ -73,4 +83,21 @@ a{
 img{
     max-width: 100%;
     height: auto;
+}
+
+.image{
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: .75rem;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+    .section{
+        margin: 0 auto;
+    }
+    .image{
+        max-width: 480px;
+    }
+
 }
