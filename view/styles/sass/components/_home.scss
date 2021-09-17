@@ -4,7 +4,7 @@
         margin-bottom: $mb-6;
         
         .home-title{
-            color: $first-color;
+            color: var(--first-color);
             font-size: $biggest-font-size * 1.4;
         }
         & p{

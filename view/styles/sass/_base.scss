@@ -7,14 +7,6 @@ html{
     scroll-behavior: smooth;
 }
 
-/*========== Variables Dark theme ==========*/
-body.dark-theme{
-    $title-color: #F1F3F2;
-    $text-color: #C7D1CC;
-    $body-color: #1D2521;
-    $container-color: #27302C;
-}
-
 /*========== Button Dark/Light ==========*/
 .change-theme {
     position: absolute;
@@ -31,17 +23,17 @@ body.dark-theme{
     margin-left: $mb-2;
     margin-right: $mb-2;
 }
- 
+
 .section-title{
     font-size: 1.2rem;
     margin-bottom: $mb-2;
-    color: $first-color;
+    color:var(--first-color);
 }
 .section-describe{
     font-weight: $font-semi-bold;
     margin-bottom: $mb-4;
     font-size: $h1-font-size;
-    color: $title-color;
+    color:var(--title-color);
 }
 @media screen and (min-width: 576px) {
     .section-title{
@@ -65,10 +57,11 @@ body.dark-theme{
 body{
     font-family: $body-font;
     font-size: $normal-font-size;
-    background-color: $body-color;
-    color: $text-color;
+    background-color: var(--body-color);
+    color: var(--text-color);
     line-height: 1.6;
 }
+
 h1,h2,h3,ul,p{
     margin: 0;  
 }

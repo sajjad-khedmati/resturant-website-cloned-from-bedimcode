@@ -18,11 +18,11 @@
     width: 64px;
     height: 64px;
     margin-bottom: $mb-2;
-    fill: $first-color;
+    fill:var(--first-color);
 }
 
 .service-title{
-    color: $title-color;
+    color: var(--title-color);
     margin-bottom: $mb-2;
 }
 

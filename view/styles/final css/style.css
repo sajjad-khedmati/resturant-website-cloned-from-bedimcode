@@ -2,6 +2,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 /*===== VARIABLES CSS =====*/
 /*========== Colors ==========*/
+:root {
+  /*========== Colors ==========*/
+  --first-color: #069C54;
+  --first-color-alt: #048654;
+  --title-color: #393939;
+  --text-color: #707070;
+  --text-color-light: #A6A6A6;
+  --body-color: #FBFEFD;
+  --container-color: #FFFFFF;
+}
+
+body.dark-theme {
+  --title-color: #F1F3F2;
+  --text-color: #C7D1CC;
+  --body-color: #1D2521;
+  --container-color: #27302C;
+}
+
 /*========== Font and typography ==========*/
 /*========== Font weight ==========*/
 /*========== Margenes ==========*/
@@ -13,7 +31,7 @@
   font-size: 1.1256rem;
   background-color: inherit;
   outline: none;
-  color: #069C54;
+  color: var(--first-color);
   transition: 0.2s ease-in;
 }
 
@@ -31,7 +49,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/*========== Variables Dark theme ==========*/
 /*========== Button Dark/Light ==========*/
 .change-theme {
   position: absolute;
@@ -52,14 +69,14 @@ html {
 .section-title {
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  color: #069C54;
+  color: var(--first-color);
 }
 
 .section-describe {
   font-weight: 600;
   margin-bottom: 2rem;
   font-size: 1.5rem;
-  color: #393939;
+  color: var(--title-color);
 }
 
 @media screen and (min-width: 576px) {
@@ -85,8 +102,8 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 0.938rem;
-  background-color: #FBFEFD;
-  color: #707070;
+  background-color: var(--body-color);
+  color: var(--text-color);
   line-height: 1.6;
 }
 
@@ -136,7 +153,7 @@ img {
 }
 
 .show-nav {
-  background-color: #fff;
+  background-color: var(--body-color);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -153,10 +170,10 @@ img {
   z-index: 100;
 }
 .navbar-logo a {
-  color: #707070;
+  color: var(--text-color);
 }
 .navbar-item {
-  background-color: #fff;
+  background-color: var(--body-color);
   position: fixed;
   left: 0;
   transition: 0.6s ease-in-out;
@@ -176,33 +193,33 @@ img {
   top: 0;
 }
 .navbar .item {
-  color: #393939;
+  color: var(--title-color);
   font-size: 1rem;
   font-weight: 500;
   transition: 0.4s;
 }
 .navbar .item.active {
-  color: #069C54;
+  color: var(--first-color);
 }
 .navbar .darkmode {
   position: absolute;
   top: 3rem;
   right: 1rem;
   font-size: 1.2rem;
-  color: #393939;
+  color: var(--title-color);
 }
 .navbar .darkmode:hover {
   color: #A6A6A6;
 }
 .navbar .item:hover {
-  color: #069C54;
+  color: var(--first-color);
 }
 .navbar-toggler {
   z-index: 100;
   font-size: 1.25rem;
 }
 .navbar-toggler:hover {
-  color: #A6A6A6;
+  color: var(--text-color-light);
 }
 
 @media screen and (min-width: 768px) {
@@ -241,7 +258,7 @@ img {
   margin-bottom: 3rem;
 }
 .home-content .home-title {
-  color: #069C54;
+  color: var(--first-color);
   font-size: 3.15rem;
 }
 .home-content p {
@@ -303,11 +320,11 @@ img {
   width: 64px;
   height: 64px;
   margin-bottom: 1rem;
-  fill: #069C54;
+  fill: var(--first-color);
 }
 
 .service-title {
-  color: #393939;
+  color: var(--title-color);
   margin-bottom: 1rem;
 }
 
@@ -336,7 +353,7 @@ img {
   overflow: hidden;
   padding: 1rem 0 0 0.6rem;
   width: 70%;
-  background-color: #fff;
+  background-color: var(--body-color);
   border-radius: 0.6rem;
   margin: 0 auto;
 }
@@ -349,7 +366,7 @@ img {
   margin-bottom: 1rem;
 }
 .card-content .card-title h4 {
-  color: #393939;
+  color: var(--title-color);
   margin-bottom: -0.1rem;
 }
 .card-content .card-title p {
@@ -361,7 +378,7 @@ img {
   align-items: center;
 }
 .card-content .card-footer .add-to-bag {
-  background-color: #069C54;
+  background-color: var(--first-color);
   width: 40px;
   height: 40px;
   text-align: center;
@@ -374,7 +391,7 @@ img {
   cursor: pointer;
 }
 .card-content .card-footer .add-to-bag:hover {
-  background-color: #048654;
+  background-color: var(--first-color-alt);
 }
 
 @media screen and (max-width: 575px) {
@@ -450,7 +467,7 @@ img {
   row-gap: 2.5rem;
 }
 .footer-item-links a {
-  color: #069C54;
+  color: var(--first-color);
   font-size: 1.25rem;
   font-weight: 600;
 }
@@ -460,10 +477,10 @@ img {
 .footer-item-links .social span {
   font-size: 1.3rem;
   margin: 0 0.4rem;
-  color: #393939;
+  color: var(--title-color);
 }
 .footer-item a {
-  color: #393939;
+  color: var(--title-color);
   font-size: 1.25rem;
   font-weight: 600;
 }
@@ -473,7 +490,7 @@ img {
 
 .copyright {
   text-align: center;
-  color: #A6A6A6;
+  color: var(--text-color-light);
 }
 
 @media screen and (min-width: 576px) {

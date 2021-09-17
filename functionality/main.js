@@ -1,7 +1,9 @@
 const btnToggle = document.getElementById('toggler');
 const navMenu = document.querySelector('.navbar-item');
 const navMenuItems = document.querySelectorAll('.item');
-const navbar = document.querySelector('.header')
+const navbar = document.querySelector('.header');
+const darkModeBtn = document.querySelector('.darkmode');
+
 
 // show navbar when ckicked
 window.addEventListener('scroll' , ()=>{
@@ -47,3 +49,8 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive)
 
+
+// dark mode 
+darkModeBtn.addEventListener('click' , ()=>{
+    document.body.classList.toggle('dark-theme');
+})

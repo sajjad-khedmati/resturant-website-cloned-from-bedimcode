@@ -4,7 +4,7 @@
 
     &-item-links{
         a{
-            color: $first-color;
+            color:var(--first-color);
             font-size: $h2-font-size;
             font-weight: $font-semi-bold;
         }
@@ -13,14 +13,14 @@
             span{
                 font-size: 1.3rem;
                 margin: 0 .4rem;
-                color: $title-color;
+                color: var(--title-color);
             }
         }
     }
 
     &-item{
         a{
-            color: $title-color;
+            color:var(--title-color);
             font-size: $h2-font-size;
             font-weight: $font-semi-bold;
         }
@@ -34,7 +34,7 @@
 
 .copyright{    
     text-align: center;
-    color: $text-color-light;
+    color: var(--text-color-light);
 }
 
 

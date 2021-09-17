@@ -10,7 +10,7 @@
 }
 
 .show-nav{
-    background-color: #fff;
+    background-color: var(--body-color);
     box-shadow: $normal-box-shadow;
 }
 
@@ -25,12 +25,12 @@
         font-size: $h2-font-size;
         z-index: $z-fixed;
         a{
-            color: $text-color;
+            color: var(--text-color);
         }
     }
 
     &-item{
-        background-color: #fff;
+        background-color: var(--body-color);
         position: fixed;
         left: 0;
         transition: .6s ease-in-out;
@@ -54,12 +54,12 @@
     }
 
     .item{
-        color: $title-color;
+        color: var(--title-color);
         font-size: 1rem;
         font-weight: $font-medium;
         transition: .4s;
         &.active{
-            color: $first-color;
+            color:var(--first-color);
         }
     }
 
@@ -68,14 +68,14 @@
         top: 3rem;
         right: 1rem;
         font-size: 1.2rem;
-        color: $title-color;
+        color: var(--title-color);
     }
     .darkmode:hover{
         color: $text-color-light
     }
 
     .item:hover{
-        color: $first-color;
+        color:var(--first-color);
     }
 
     &-toggler{
@@ -83,7 +83,7 @@
         font-size: $h2-font-size;
     }
     &-toggler:hover{
-        color: $text-color-light;
+        color:var(--text-color-light);
     }
 
 }
