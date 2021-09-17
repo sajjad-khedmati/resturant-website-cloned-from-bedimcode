@@ -28,7 +28,7 @@
 @import './contact';
 
 
-@media screen and (min-width: 576px) {
+@include Query(576px) {
     .app{
         flex-direction: row-reverse;
         display: flex;

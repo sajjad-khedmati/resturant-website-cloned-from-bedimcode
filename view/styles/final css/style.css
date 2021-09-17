@@ -335,9 +335,10 @@ img {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   padding: 1rem 0 0 0.6rem;
-  max-width: 200px;
+  width: 70%;
   background-color: #fff;
   border-radius: 0.6rem;
+  margin: 0 auto;
 }
 .menu-card .card-image {
   margin: 0 auto;
@@ -376,9 +377,23 @@ img {
   background-color: #048654;
 }
 
+@media screen and (max-width: 575px) {
+  .menu-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-card {
+    width: 50%;
+  }
+}
 @media screen and (min-width: 576px) {
   .menu-cards {
     margin-top: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 769px) {
+  .menu-cards {
     grid-template-columns: repeat(3, 1fr);
   }
 }

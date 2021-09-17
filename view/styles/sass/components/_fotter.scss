@@ -38,7 +38,7 @@
 }
 
 
-@media screen and (min-width: 576px){
+@include Query(576px){
 
     .footer{
         margin-top: 5rem;
@@ -49,7 +49,7 @@
 }
 
 
-@media screen and (min-width: 768px){
+@include Query(768px){
 
     .footer{
         justify-items: initial;
@@ -58,7 +58,7 @@
     }
 }
 
-@media screen and (min-width: 1024px){
+@include Query(1024px){
 
     .footer{
         grid-template-columns: repeat(4, 1fr);

@@ -101,3 +101,10 @@ img{
     }
 
 }
+
+
+@mixin Query($min-width) { 
+    @media screen and (min-width: $min-width) {
+        @content;
+    }
+}
